@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.start{
+    width: 200px;
+    margin: 60px auto;
+    
+    .start-button{
+        width: 130px;
+        height: 50px;
+        background-color: rgb(21, 148, 17);
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: 3px;
+        border: none;
+        border-radius: 10px;
+        transition: 0.3s linear;
+
+        &:hover{
+            background-color: rgb(66, 156, 63);
+            color: rgb(255, 255, 255);
+            transform: scale(0.97);
+        }
+    }
+    
+}
+
+.container{
+    display: none;
+    justify-content: center;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 4px;
+    .block{
+        border-radius: 10px;
+        background-color:  rgb(239, 241, 220);
+        border: 1px solid rgba(193, 197, 155, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.next{
+    width: 60px;
+    display: none;
+    margin: 10px auto;
+    
+    .next-button{
+        width: 60px;
+        height: 20px;
+        background-color:  grey;
+        color: white;
+        font-size: 0.7em;
+        font-weight: bold;
+        letter-spacing: 3px;
+        border: none;
+        border-radius: 5px;
+        transition: 0.3s linear;
+
+        &:hover{
+            background-color:  grey;
+            color: rgb(255, 255, 255);
+            transform: scale(0.97);
+        }
+    }
+    
+}
+
+
+.active{
+    width: 60px;
+    height: 20px;
+    background-color: rgb(21, 148, 17);
+    color: white;
+    font-size: 0.7em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s linear;
+
+    &:hover{
+        background-color:  rgb(21, 148, 17);
+        color: rgb(255, 255, 255);
+        transform: scale(0.97);
+    }
+}
+
+
